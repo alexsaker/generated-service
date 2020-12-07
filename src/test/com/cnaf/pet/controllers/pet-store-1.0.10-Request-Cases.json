@@ -1,0 +1,664 @@
+
+[
+    {
+        "id": 0,
+        "name": "limit.Defined='Yes'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "limit",
+                "in": "query",
+                "style": "form",
+                "explode": false,
+                "data": {
+                    "type": "integer",
+                    "value": -605112969,
+                    "format": "int32"
+                },
+                "valid": true
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "limit.Defined='No'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "limit",
+                "in": "query",
+                "style": "form",
+                "explode": false,
+                "data": null,
+                "valid": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "limit.Value.Is='0'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "limit",
+                "in": "query",
+                "style": "form",
+                "explode": false,
+                "data": {
+                    "type": "integer",
+                    "value": 0,
+                    "format": "int32"
+                },
+                "valid": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "limit.Value.Is='> 0'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "limit",
+                "in": "query",
+                "style": "form",
+                "explode": false,
+                "data": {
+                    "type": "integer",
+                    "value": 119622420,
+                    "format": "int32"
+                },
+                "valid": true
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "limit.Type=null",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "limit",
+                "in": "query",
+                "style": "form",
+                "explode": false,
+                "data": {
+                    "type": "null",
+                    "value": null
+                },
+                "valid": false
+            }
+        ],
+        "invalidInput": "limit.Type=null"
+    },
+    {
+        "id": 5,
+        "name": "limit.Type='Not integer'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "limit",
+                "in": "query",
+                "style": "form",
+                "explode": false,
+                "data": {
+                    "type": "boolean",
+                    "value": true
+                },
+                "valid": false
+            }
+        ],
+        "invalidInput": "limit.Type=Not integer"
+    },
+    {
+        "id": 0,
+        "name": "Body.Defined='Yes'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": "CIV@)I-O[8DmvK$ggt&f2nV9V ;f cg/%nYK(cFW);XDsfU;a~(fx,aBw]D%F]$m^'9gduYQ4>nK'-f)Y7c8K@/1$'Z=^7hCi,N]!lOM4t?#\\o/R\"uH@|2atb?=_!^bFm ~x H%41H'B.CiV%<JZN_s_wU#^}R]$\\,%nTtzB/2i<%R]qNM|A"
+                    },
+                    "tag": {
+                        "type": "string",
+                        "value": "}zl|D: gN!.chMMOP)A@#dejP!ZBc[9!o>Bzh!@;xcdS'(+!2]LXsON3x:;iEKpKi1[v?`BTD=qk2nE.:H_S$NSbQj%k|4UCBevr(mr()=8k4yLBLB@n1([iQu|Wy)c'eVB/p.t[8zE]r&>MBC|k w\"Bf+{%!C)C}q0HyHuWY(tS;>jVvhaFsqw:9^b?IE5wc0Z:V]<)ACmlJ;`=WTprlfvh"
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": -936307431062357069,
+                        "format": "int64"
+                    },
+                    "avztzmjqqgnuc": {
+                        "type": "integer",
+                        "value": 389,
+                        "format": "int32"
+                    },
+                    "hhz": {
+                        "type": "boolean",
+                        "value": true
+                    },
+                    "hpsl": {
+                        "type": "string",
+                        "value": "$m2<d>"
+                    }
+                }
+            },
+            "valid": true
+        }
+    },
+    {
+        "id": 1,
+        "name": "Body.Defined='No'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "data": null,
+            "valid": true
+        }
+    },
+    {
+        "id": 2,
+        "name": "Body.application-json.Value.Properties.id.Value.Is='0'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": 0,
+                        "format": "int64"
+                    }
+                }
+            },
+            "valid": true
+        }
+    },
+    {
+        "id": 3,
+        "name": "Body.application-json.Value.Properties.id.Value.Is='> 0'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": "NmekkXYQX c\\~\\g}>>C(:49}FmNodb)s/c\"v{W9Zl0R&E!@Z("
+                    },
+                    "tag": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": 3601303003409603010,
+                        "format": "int64"
+                    },
+                    "jxcgqkjyog": {
+                        "type": "integer",
+                        "value": 85,
+                        "format": "int32"
+                    }
+                }
+            },
+            "valid": true
+        }
+    },
+    {
+        "id": 4,
+        "name": "Body.Media-Type='Other'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "text/xml",
+            "data": {
+                "type": "boolean",
+                "value": true
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.Media-Type=Other"
+    },
+    {
+        "id": 5,
+        "name": "Body.application-json.Type=null",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "null",
+                "value": null
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Type=null"
+    },
+    {
+        "id": 6,
+        "name": "Body.application-json.Type='Not object'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "integer",
+                "value": 262,
+                "format": "int32"
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Type=Not object"
+    },
+    {
+        "id": 7,
+        "name": "Body.application-json.Value.Properties.id.Defined='No'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": ""
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.id.Defined=No"
+    },
+    {
+        "id": 8,
+        "name": "Body.application-json.Value.Properties.id.Type=null",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "id": {
+                        "type": "null",
+                        "value": null
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.id.Type=null"
+    },
+    {
+        "id": 9,
+        "name": "Body.application-json.Value.Properties.id.Type='Not integer'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "id": {
+                        "type": "array",
+                        "value": [
+                            {
+                                "type": "string",
+                                "value": "O@"
+                            },
+                            {
+                                "type": "string",
+                                "value": "=]\\V4A"
+                            }
+                        ]
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.id.Type=Not integer"
+    },
+    {
+        "id": 10,
+        "name": "Body.application-json.Value.Properties.name.Defined='No'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "id": {
+                        "type": "integer",
+                        "value": -783800706850935379,
+                        "format": "int64"
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.name.Defined=No"
+    },
+    {
+        "id": 11,
+        "name": "Body.application-json.Value.Properties.name.Type=null",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "null",
+                        "value": null
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": -3331850486428470878,
+                        "format": "int64"
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.name.Type=null"
+    },
+    {
+        "id": 12,
+        "name": "Body.application-json.Value.Properties.name.Type='Not string'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "integer",
+                        "value": 942,
+                        "format": "int32"
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": -3162422660102955779,
+                        "format": "int64"
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.name.Type=Not string"
+    },
+    {
+        "id": 13,
+        "name": "Body.application-json.Value.Properties.tag.Type=null",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": -3619131670228804122,
+                        "format": "int64"
+                    },
+                    "tag": {
+                        "type": "null",
+                        "value": null
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.tag.Type=null"
+    },
+    {
+        "id": 14,
+        "name": "Body.application-json.Value.Properties.tag.Type='Not string'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets",
+        "operation": "POST",
+        "body": {
+            "mediaType": "application/json",
+            "data": {
+                "type": "object",
+                "value": {
+                    "name": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "id": {
+                        "type": "integer",
+                        "value": -493064419988362971,
+                        "format": "int64"
+                    },
+                    "tag": {
+                        "type": "array",
+                        "value": [
+                            {
+                                "type": "string",
+                                "value": ""
+                            }
+                        ]
+                    }
+                }
+            },
+            "valid": false
+        },
+        "invalidInput": "Body.application-json.Value.Properties.tag.Type=Not string"
+    },
+    {
+        "id": 0,
+        "name": "petId.Defined='Yes'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets/{petId}",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "petId",
+                "in": "path",
+                "style": "simple",
+                "explode": false,
+                "data": {
+                    "type": "string",
+                    "value": "{uP`,ay79,TqV-hl.(71:M0<isD_7bVPs3J>v\\I4:!x\"I,UTBIHT1ex>>e[J35K91qq1O?3?yW$rHL9*L6NYyqS>{<Tniiz;g`oc)OR72dh=Ba|zu:ji+wJ"
+                },
+                "valid": true
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "petId.Value.Length='0'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets/{petId}",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "petId",
+                "in": "path",
+                "style": "simple",
+                "explode": false,
+                "data": {
+                    "type": "string",
+                    "value": ""
+                },
+                "valid": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "petId.Defined='No'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets/{petId}",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "petId",
+                "in": "path",
+                "style": "simple",
+                "explode": false,
+                "data": null,
+                "valid": false
+            }
+        ],
+        "invalidInput": "petId.Defined=No"
+    },
+    {
+        "id": 3,
+        "name": "petId.Type=null",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets/{petId}",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "petId",
+                "in": "path",
+                "style": "simple",
+                "explode": false,
+                "data": {
+                    "type": "null",
+                    "value": null
+                },
+                "valid": false
+            }
+        ],
+        "invalidInput": "petId.Type=null"
+    },
+    {
+        "id": 4,
+        "name": "petId.Type='Not string'",
+        "server": "http://petstore.swagger.io/v1",
+        "version": "1.0.10",
+        "api": "Swagger Petstore 1.0.10",
+        "path": "/pets/{petId}",
+        "operation": "GET",
+        "parameters": [
+            {
+                "name": "petId",
+                "in": "path",
+                "style": "simple",
+                "explode": false,
+                "data": {
+                    "type": "object",
+                    "value": {
+                        "bhykfs": {
+                            "type": "integer",
+                            "value": 949,
+                            "format": "int32"
+                        }
+                    }
+                },
+                "valid": false
+            }
+        ],
+        "invalidInput": "petId.Type=Not string"
+    }
+]

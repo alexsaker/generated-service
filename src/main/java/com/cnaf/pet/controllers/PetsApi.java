@@ -29,43 +29,72 @@ import javax.validation.constraints.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2020-10-27T08:19:22.706343+01:00[Europe/Paris]")
 
 @Validated
 @Api(value = "pets", description = "the pets API")
 public interface PetsApi {
 
+    default Optional<NativeWebRequest> getRequest() {
+        return Optional.empty();
+    }
+
     /**
      * POST /pets : Create a pet
      *
-     * @return Null response (status code 201)
+     * @param pet  (optional)
+     * @return Expected to send the created pet back (status code 200)
      *         or unexpected error (status code 200)
      */
-    @ApiOperation(value = "Create a pet", nickname = "createPets", notes = "", tags={ "pets", })
+    @ApiOperation(value = "Create a pet", nickname = "createPets", notes = "", response = Pet.class, tags={ "pets", })
     @ApiResponses(value = { 
-        @ApiResponse(code = 201, message = "Null response"),
+        @ApiResponse(code = 200, message = "Expected to send the created pet back", response = Pet.class),
         @ApiResponse(code = 200, message = "unexpected error", response = Error.class) })
     @RequestMapping(value = "/pets",
-        produces = "application/json", 
+        produces = { "application/json" }, 
+        consumes = { "application/json" },
         method = RequestMethod.POST)
-    ResponseEntity<Void> createPets();
+    default ResponseEntity<Pet> createPets(@ApiParam(value = ""  )  @Valid @RequestBody(required = false) Pet pet) throws Exception {
+        getRequest().ifPresent(request -> {
+            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
+                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String exampleString = "{ \"id\" : 1, \"name\" : \"sumi\", \"tag\" : \"dog\" }";
+                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    break;
+                }
+            }
+        });
+        return new ResponseEntity<>(HttpStatus.valueOf(200));
+
+    }
 
 
     /**
-     * GET /pets : List all pets
+     * GET /pets : List all pets with example 1.0.10
      *
      * @param limit How many items to return at one time (max 100) (optional)
      * @return A paged array of pets (status code 200)
      *         or unexpected error (status code 200)
      */
-    @ApiOperation(value = "List all pets", nickname = "listPets", notes = "", response = Pets.class, tags={ "pets", })
+    @ApiOperation(value = "List all pets with example 1.0.10", nickname = "listPets", notes = "", response = Pets.class, tags={ "pets", })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "A paged array of pets", response = Pets.class),
         @ApiResponse(code = 200, message = "unexpected error", response = Error.class) })
     @RequestMapping(value = "/pets",
-        produces = "application/json", 
+        produces = { "application/json" }, 
         method = RequestMethod.GET)
-    ResponseEntity<Pets> listPets(@ApiParam(value = "How many items to return at one time (max 100)") @Valid @RequestParam(value = "limit", required = false) Integer limit);
+    default ResponseEntity<Pets> listPets(@ApiParam(value = "How many items to return at one time (max 100)") @Valid @RequestParam(value = "limit", required = false) Optional<Integer> limit) throws Exception {
+        getRequest().ifPresent(request -> {
+            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
+                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String exampleString = "[ { \"id\" : 1, \"name\" : \"sumo\", \"tag\" : \"dog\" }, { \"id\" : 2, \"name\" : \"tumi\", \"tag\" : \"cat\" }, { \"id\" : 3, \"name\" : \"yumi\", \"tag\" : \"dog\" } ]";
+                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    break;
+                }
+            }
+        });
+        return new ResponseEntity<>(HttpStatus.valueOf(200));
+
+    }
 
 
     /**
@@ -80,8 +109,20 @@ public interface PetsApi {
         @ApiResponse(code = 200, message = "Expected response to a valid request", response = Pet.class),
         @ApiResponse(code = 200, message = "unexpected error", response = Error.class) })
     @RequestMapping(value = "/pets/{petId}",
-        produces = "application/json", 
+        produces = { "application/json" }, 
         method = RequestMethod.GET)
-    ResponseEntity<Pet> showPetById(@ApiParam(value = "The id of the pet to retrieve",required=true) @PathVariable("petId") String petId);
+    default ResponseEntity<Pet> showPetById(@ApiParam(value = "The id of the pet to retrieve",required=true) @PathVariable("petId") String petId) throws Exception {
+        getRequest().ifPresent(request -> {
+            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
+                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String exampleString = "{ \"id\" : 1, \"name\" : \"sumi\", \"tag\" : \"dog\" }";
+                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    break;
+                }
+            }
+        });
+        return new ResponseEntity<>(HttpStatus.valueOf(200));
+
+    }
 
 }
